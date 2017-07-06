@@ -81,13 +81,3 @@ class UIUtils {
 fun Int.toPx(): Int {
     return ((this * Resources.getSystem().displayMetrics.density).toInt())
 }
-
-operator fun ViewGroup.get(index: Int): View = getChildAt(index)
-
-fun ViewGroup.children() = object : Iterable<View> {
-    override fun iterator(): Iterator<View> = object : Iterator<View> {
-        var index = 0
-        override fun hasNext(): Boolean = index < childCount
-        override fun next(): View = getChildAt(index++)
-    }
-}
