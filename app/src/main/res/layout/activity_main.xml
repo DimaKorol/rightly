@@ -28,6 +28,13 @@
 
     </RelativeLayout>
 
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_below="@+id/toolbarLayout"/>
+
     <com.koroliov.rightly.ui.view.CornerActionButton
         android:id="@+id/actionBtn"
         android:layout_width="@dimen/actionButtonSize"
@@ -38,13 +45,6 @@
         android:backgroundTint="@color/colorPrimary"
         android:background="@drawable/template_ripple_drawable"
         android:src="@drawable/ic_add"/>
-
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottomNavigation"
-        android:layout_below="@+id/toolbarLayout"/>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigation"
