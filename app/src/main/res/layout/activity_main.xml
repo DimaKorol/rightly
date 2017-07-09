@@ -39,12 +39,11 @@
         android:id="@+id/actionBtn"
         android:layout_width="@dimen/actionButtonSize"
         android:layout_height="@dimen/actionButtonSize"
-        android:paddingStart="12dp"
-        android:paddingBottom="12dp"
         android:layout_alignParentEnd="true"
         android:backgroundTint="@color/colorPrimary"
         android:background="@drawable/template_ripple_drawable"
-        android:src="@drawable/ic_add"/>
+        android:src="@drawable/ic_add"
+        app:corner="topRight"/>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigation"
